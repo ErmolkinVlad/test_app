@@ -1,0 +1,16 @@
+= link_to 'Back', users_path
+p
+  | Hello. My name is #{@user.name}.
+
+p
+  = link_to 'New game session', new_user_game_session_path(@user)
+
+- if @user.game_sessions.present?
+  | Games: 
+  table
+    tr
+      th
+        | Game
+      th
+        | Score
+    = render @games

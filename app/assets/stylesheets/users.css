@@ -1,0 +1,9 @@
+.user {
+  margin: 10px;
+  display: inline-block;
+}
+
+.user-name {
+  display: inline-block;
+  margin: 10px;
+}

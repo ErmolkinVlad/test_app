@@ -1,0 +1,17 @@
+= link_to 'New user', new_user_path
+
+table
+  = render @users
+
+
+h3
+  | Best Games:
+table
+  tr
+    th
+      | User
+    th
+      | Game
+    th
+      | Score
+  = render @best_games

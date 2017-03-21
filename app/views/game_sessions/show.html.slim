@@ -1,0 +1,9 @@
+= link_to 'Back', user_path(@game.user)
+
+p 
+  = @game.name
+
+p data-score-id='#{@game.id}'
+  | Score: #{@game.score}
+
+= link_to 'Play', user_game_session_play_path(@game.user, @game), remote: true

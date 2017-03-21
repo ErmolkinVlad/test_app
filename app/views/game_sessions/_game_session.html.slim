@@ -1,0 +1,10 @@
+tr.game
+  - if current_page?(controller: :users, action: :index)
+    td
+      = link_to game_session.user.name, user_path(game_session.user)
+  td
+    = game_session.name
+  td
+    = game_session.score
+  td
+    = link_to 'Show', user_game_session_path(game_session.user, game_session)
